@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChatX AI",
+  "description": "Chat ai",
+  "version": "1.0",
+  "action": {
+    "default_title": "ChatX AI"
+  },
+  "side_panel": {
+    "default_path": "panel.html",
+    "openPanelOnActionClick": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "offline_enabled": true,
+  "permissions": ["contextMenus", "storage", "sidePanel"]
+}
