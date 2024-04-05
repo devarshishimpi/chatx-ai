@@ -7,11 +7,11 @@
     "default_title": "ChatX AI"
   },
   "side_panel": {
-    "default_path": "panel.html",
+    "default_path": "src/panel.html",
     "openPanelOnActionClick": true
   },
   "options_ui": {
-    "page": "options.html",
+    "page": "src/options.html",
     "open_in_tab": true
   },
   "offline_enabled": true,
