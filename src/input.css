@@ -241,3 +241,11 @@ body {
   height: 100%;
   overflow-y: hidden;
 }
+
+.pl-4-5 {
+  padding-left: 1.125rem; /* Represents pl-4.5 */
+}
+
+.pl-3-5 {
+  padding-left: 0.875rem; /* Represents pl-3.5 */
+}
