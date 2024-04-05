@@ -1,9 +1,33 @@
 <!doctype html>
-<head>
-  <link href="./output.css" rel="stylesheet" />
-</head>
-<html>
-  <body class="mx-4 my-3 poppins-regular">
-    <h1 class="poppins-semibold text-2xl">ChatX AI</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col h-full mx-4 mt-3">
+    <div class="flex-grow">
+      <h1 class="poppins-semibold text-2xl">ChatX AI</h1>
+    </div>
+    <div class="relative flex-none mb-10">
+      <textarea
+        class="block w-full p-3 text-sm border-2 bg-gray-50 border-gray-100 hover:bg-white hover:border-teal-500 focus:border-teal-500 focus:outline-none transition duration-300 rounded-lg"
+        placeholder="Type a message..."
+        rows="3"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        class="text-gray-400 hover:text-teal-600 absolute end-2.5 bottom-2.5 focus:outline-none font-medium rounded-lg text-sm p-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 24 24"
+        >
+          <path fill="currentColor" d="M3 20v-6l8-2l-8-2V4l19 8z" />
+        </svg>
+      </button>
+    </div>
   </body>
 </html>

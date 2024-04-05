@@ -235,3 +235,9 @@
   font-weight: 900;
   font-style: italic;
 }
+
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
