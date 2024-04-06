@@ -6,10 +6,47 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="flex flex-col h-full mx-4 mt-3">
-    <div>
+    <div class="flex">
       <h1 class="poppins-semibold text-2xl">
         ChatX <span class="text-teal-600">AI</span>
       </h1>
+      <div
+        x-data="{ isOpen: true }"
+        class="relative inline-block ml-auto poppins-regular"
+      >
+        <button
+          @click="isOpen = !isOpen"
+          class="relative z-10 block p-1 text-black focus:outline-none"
+        >
+          <img
+            src="../svgs/hamburger.svg"
+            alt="Hamburger Menu Icon"
+            class="w-5 h-5"
+          />
+        </button>
+        <div
+          x-show="isOpen"
+          @click.away="isOpen = false"
+          x-transition:enter="transition ease-out duration-100"
+          x-transition:enter-start="opacity-0 scale-90"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-100"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-90"
+          class="poppins-regular absolute right-0 z-20 w-36 py-2 mt-2 origin-top-right bg-white rounded-md shadow-xl"
+        >
+          <a
+            href="#"
+            class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform hover:bg-gray-100"
+            >Settings</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform hover:bg-gray-100"
+            >Sign Out</a
+          >
+        </div>
+      </div>
     </div>
     <div class="h-full mx-auto flex items-center">
       <div class="m-auto">
